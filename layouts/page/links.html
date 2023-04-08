@@ -1,0 +1,39 @@
+{{ define "body-class" }}article-page keep-sidebar{{ end }}
+{{ define "main" }}
+{{ partial "article/article.html" . }}
+
+<div class="article-list--compact links">
+    {{ $siteResources := resources }}
+    {{ range $i, $link := $.Site.Data.links }}
+    <article>
+        <a href="{{ $link.website }}" target="_blank" rel="noopener">
+            <div class="article-details">
+                <h2 class="article-title">
+                    {{- $link.title -}}
+                </h2>
+                <footer class="article-time">
+                    {{ with $link.description }}
+                    {{ . }}
+                    {{ else }}
+                    {{ $link.website }}
+                    {{ end }}
+                </footer>
+            </div>
+
+            <div class="article-image">
+                <img src="{{ $link.image }}" width="120" height="120" loading="lazy"
+                    data-key="links-{{ $link.website }}">
+            </div>
+        </a>
+    </article>
+    {{ end }}
+</div>
+
+{{ if or (not (isset .Params "comments")) (eq .Params.comments "true")}}
+{{ partial "comments/include" . }}
+{{ end }}
+
+{{ partialCached "footer/footer" . }}
+
+{{ partialCached "article/components/photoswipe" . }}
+{{ end }}
