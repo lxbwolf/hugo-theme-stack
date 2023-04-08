@@ -43,11 +43,11 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle:
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/avatar.jpeg
 
     article:
         math: false
