@@ -37,7 +37,7 @@
         </div>
     </header>
 
-    {{- with .Site.Menus.social -}}
+<!--    {{- with .Site.Menus.social -}}
         <ol class="social-menu">
             {{ range . }}
                 <li>
@@ -56,7 +56,7 @@
             {{ end }}
         </ol>
     {{- end -}}
-
+-->
     <ol class="menu" id="main-menu">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
@@ -88,6 +88,25 @@
                 </li>
             {{ end }}
             
+            {{- with .Site.Menus.social -}}
+                <ol class="social-menu">
+                    {{ range . }}
+                        <li>
+                            <a 
+                                href='{{ .URL }}'
+                                {{ if eq (default true .Params.newTab) true }}target="_blank"{{ end }}
+                                {{ with .Name }}title="{{ . }}"{{ end }}
+                                rel="me"
+                            >
+                                {{ $icon := default "link" .Params.Icon }}
+                                {{ with $icon }}
+                                    {{ partial "helper/icon" . }}
+                                {{ end }}
+                            </a>
+                        </li>
+                    {{ end }}
+                </ol>
+            {{- end -}}
             {{ if (default false .Site.Params.colorScheme.toggle) }}
                 <li id="dark-mode-toggle">
                     {{ partial "helper/icon" "toggle-left" }}

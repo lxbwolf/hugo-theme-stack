@@ -25,6 +25,17 @@ menu:
           name: 友链
           pageRef: /links
           weight: 40
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/lxbwolf
+          params:
+              icon: brand-github
+        - identifier: mailtome
+          name: Email
+          url: mailto://me@liuxb.email
+          params:
+              icon: brand-email
 
 googleAnalytics: "G-JZ2PWLT6JY"
 
@@ -61,7 +72,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: utterances
 
         disqusjs:
             shortname:
