@@ -71,7 +71,7 @@ params:
             adminLabel:
 
         utterances:
-            repo:
+            repo: lxbwolf/lxbwolf.github.io
             issueTerm: pathname
             label:
 
