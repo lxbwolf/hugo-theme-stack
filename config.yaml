@@ -26,6 +26,8 @@ menu:
           pageRef: /links
           weight: 40
 
+googleAnalytics: "G-JZ2PWLT6JY"
+
 params:
     mainSections:
         - post
