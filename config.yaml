@@ -33,7 +33,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /favicon.png # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2020
@@ -139,12 +139,12 @@ params:
     widgets:
         homepage:
             - type: search
-            - type: archives
-              params:
-                  limit: 5
             - type: categories
               params:
                   limit: 10
+            - type: archives
+              params:
+                  limit: 5
             - type: tag-cloud
               params:
                   limit: 10
