@@ -36,6 +36,11 @@ menu:
           url: mailto://me@liuxb.email
           params:
               icon: brand-email
+        - identifier: myrss
+          name: Rss
+          url: https://lxb.wiki/atom.xml
+          params:
+              icon: rss
 
 googleAnalytics: "G-JZ2PWLT6JY"
 
