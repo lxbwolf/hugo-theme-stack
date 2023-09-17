@@ -33,7 +33,7 @@ menu:
               icon: brand-github
         - identifier: mailtome
           name: Email
-          url: mailto://me@liuxb.email
+          url: mailto://me@lxb.wiki
           params:
               icon: brand-email
         - identifier: myrss
