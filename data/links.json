@@ -34,5 +34,11 @@
         "website": "https://cjh0613.com/",
         "image": "https://raw.githubusercontent.com/cjh0613/blog/master/images/icons/CJHicon.jpg",
         "description": "世上本没有路"
+    },
+    {
+        "title": "博友圈",
+        "website": "https://www.boyouquan.com/home",
+        "image": "https://www.boyouquan.com/assets/images/sites/logo/logo-small.png",
+        "description": "博客人的朋友圈，博客收录与文章 RSS 聚合网站。"
     }
 ]
